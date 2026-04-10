@@ -1,0 +1,14 @@
+# IDE Settings
+.idea/
+*.iml
+.vscode/
+
+# Build folders
+target/
+node_modules/
+dist/
+bin/
+
+# OS files
+.DS_Store
+Thumbs.db
