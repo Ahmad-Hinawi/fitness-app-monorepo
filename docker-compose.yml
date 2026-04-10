@@ -8,8 +8,8 @@ services:
   keycloak:
     image: quay.io/keycloak/keycloak:24.0.0
     environment:
-      - KEYCLOAK_ADMIN=admin
-      - KEYCLOAK_ADMIN_PASSWORD=admin
+      - KEYCLOAK_ADMIN=${MY_KC_USER}
+      - KEYCLOAK_ADMIN_PASSWORD=${MY_KC_PASS}
     ports:
       - "8090:8080"
     command: start-dev
